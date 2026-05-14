@@ -1,25 +1,25 @@
 {
   "nav": {
-    "about": "Về Tôi",
-    "projects": "Dự Án",
-    "contact": "Liên Hệ"
+    "about": "Về tôi",
+    "projects": "Dự án",
+    "contact": "Liên hệ"
   },
   "hero": {
     "welcome": "Chào mừng đến không gian sáng tạo của tôi",
-    "title": "Thiết Kế & Phát Triển",
+    "title": "Thiết kế & Phát triển",
     "subtitle": "- bởi Akina -",
-    "explore": "Khám Phá"
+    "explore": "Khám phá"
   },
   "about": {
-    "title": "Về Tôi",
+    "title": "Về tôi",
     "quote": "Thiết kế tốt bắt đầu từ việc hiểu biết về tâm lý học và công nghệ.",
     "quoteAuthor": "- Don Norman",
     "greeting": "Xin chào, tôi là Akina",
-    "description": "Cách tiếp cận UI/UX của tôi bắt nguồn từ nền tảng IT của tôi. Tôi đam mê hoàn thiện trải nghiệm người dùng. Với nền tảng về kỹ thuật phần mềm, tôi kết hợp chuyên môn kỹ thuật với tầm nhìn sáng tạo để xây dựng những sản phẩm vừa đẹp vừa chức năng.",
-    "skillsTitle": "Kỹ Năng",
+    "description": "Cách tiếp cận UI/UX của tôi bắt nguồn từ nền tảng IT. Tôi đam mê hoàn thiện trải nghiệm người dùng. Với nền tảng về kỹ thuật phần mềm, tôi kết hợp chuyên môn của mình với tầm nhìn sáng tạo để xây dựng những sản phẩm vừa có tính thẩm mỹ vừa dễ sử dụng các chức năng.",
+    "skillsTitle": "Kỹ năng",
     "skills": [
-      "Nghiên Cứu UX",
-      "Thiết Kế Chuyển Động",
+      "Nghiên cứu UX",
+      "Thiết kế hiệu ứng chuyển động",
       "Figma",
       "Adobe Illustrator",
       "Git / GitHub",
@@ -27,40 +27,40 @@
       "TypeScript",
       "Tailwind CSS"
     ],
-    "experienceTitle": "Giáo Dục & Kinh Nghiệm",
+    "experienceTitle": "Giáo dục & Kinh nghiệm",
     "experiences": [
-      "GPA: 8.12 - Chuyên Ngành Kỹ Thuật Phần Mềm",
-      "Kỹ Thuật Yêu Cầu (Điểm: A)",
-      "Tương Tác Con Người - Máy Tính (Điểm: A)",
-      "Phát Triển Ứng Dụng Web (Điểm: A)"
+      "GPA: 8.12 - Chuyên ngành Kỹ thuật Phần mềm",
+      "Kỹ thuật phân tích yêu cầu (Điểm: A)",
+      "Giao tiếp Người - Máy (Điểm: A)",
+      "Phát triển Ứng dụng Web (Điểm: A)"
     ],
-    "processTitle": "Quy Trình Làm Việc",
+    "processTitle": "Quy trình làm việc",
     "process": [
       {
         "step": "BƯỚC 1",
-        "title": "Khám Phá & Chiến Lược",
+        "title": "Tìm hiểu và xây dựng chiến lược",
         "description": "Hiểu rõ mục tiêu dự án, nhu cầu người dùng và yêu cầu kỹ thuật để tạo nền tảng vững chắc."
       },
       {
         "step": "BƯỚC 2",
-        "title": "Thiết Kế & Tạo Mẫu",
-        "description": "Tạo thiết kế hoàn hảo trong Figma với khả năng truy cập và đáp ứng."
+        "title": "Thiết kế mẫu",
+        "description": "Tạo thiết kế hợp lý trong Figma với khả năng đáp ứng tốt nhu cầu người dùng."
       },
       {
         "step": "BƯỚC 3",
-        "title": "Phát Triển & Triển Khai",
-        "description": "Chuyển đổi thiết kế thành mã sản xuất bằng React, Next.js và tiêu chuẩn web hiện đại."
+        "title": "Phát triển & Triển khai",
+        "description": "Chuyển đổi thiết kế thành mã nguồn bằng React, Next.js và các tiêu chuẩn web hiện đại."
       },
       {
         "step": "BƯỚC 4",
-        "title": "Kiểm Tra & Tối Ưu Hóa",
+        "title": "Kiểm tra & Tối ưu",
         "description": "Đảm bảo tuân thủ WCAG 2.2 AA, tối ưu hóa hiệu suất và tương thích trên các trình duyệt."
       }
     ]
   },
   "projects": {
-    "title": "Dự Án Nổi Bật",
-    "viewProject": "Xem Dự Án",
+    "title": "Dự án nổi bật",
+    "viewProject": "Xem dự án",
     "neo_monolith": {
       "title": "NEO-MONOLITH",
       "category": "KIẾN TRÚC",
@@ -126,18 +126,18 @@
     }
   },
   "contact": {
-    "title": "Hãy Kết Nối",
-    "subtitle": "Có dự án trong tâm trí hoặc chỉ muốn trò chuyện? Tôi rất muốn nghe từ bạn.",
-    "contactInfo": "Thông Tin Liên Hệ",
+    "title": "Hãy kết nối",
+    "subtitle": "Có ý tưởng về một dự án hoặc chỉ muốn trò chuyện? Tôi rất muốn nghe từ bạn.",
+    "contactInfo": "Thông tin liên hệ",
     "email": "Email",
-    "location": "Vị Trí",
+    "location": "Địa chỉ",
     "phone": "Điện Thoại",
-    "contactForm": "Gửi Tin Nhắn",
-    "name": "Tên Của Bạn",
-    "emailPlaceholder": "Email Của Bạn",
-    "message": "Tin Nhắn Của Bạn",
-    "send": "Gửi Tin Nhắn",
-    "sending": "Đang Gửi...",
-    "successMessage": "Cảm ơn tin nhắn của bạn! Tôi sẽ sớm trả lời bạn."
+    "contactForm": "Gửi tin nhắn",
+    "name": "Tên của bạn",
+    "emailPlaceholder": "Email của bạn",
+    "message": "Hãy gửi tin nhắn cho tôi...",
+    "send": "Gửi tin nhắn",
+    "sending": "Đang gửi...",
+    "successMessage": "Cảm ơn tin nhắn của bạn! Tôi sẽ sớm phản hồi."
   }
 }

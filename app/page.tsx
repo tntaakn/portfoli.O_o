@@ -7,6 +7,7 @@ import { HeroSection } from "@/components/portfolio/hero-section";
 import { AboutSection } from "@/components/portfolio/about-section";
 import { ProjectsSection } from "@/components/portfolio/projects-section";
 import { ContactSection } from "@/components/portfolio/contact-section";
+import { withBasePath } from "@/lib/utils";
 
 export default function PortfolioPage() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -41,7 +42,7 @@ export default function PortfolioPage() {
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: "url('/images/magical-forest.jpg')",
+              backgroundImage: `url('${withBasePath("/images/magical-forest.jpg")}')`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

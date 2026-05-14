@@ -45,9 +45,8 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     if (savedLanguage && (savedLanguage === "en" || savedLanguage === "vi")) {
       setLanguageState(savedLanguage);
     } else {
-      // Detect browser language
-      const browserLang = navigator.language.startsWith("vi") ? "vi" : "en";
-      setLanguageState(browserLang);
+      // Default to English
+      setLanguageState("en");
     }
     setIsReady(true);
   }, []);

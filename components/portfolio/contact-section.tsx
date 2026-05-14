@@ -16,11 +16,28 @@ export function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    setIsSubmitting(false);
-    setFormData({ name: "", email: "", message: "" });
-    alert(t("contact.successMessage"));
+    
+    try {
+      const response = await fetch("https://formspree.io/f/mwvydlrn", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setFormData({ name: "", email: "", message: "" });
+        alert(t("contact.successMessage"));
+      } else {
+        alert("Error sending message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("Error sending message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

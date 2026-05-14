@@ -3,8 +3,11 @@
 import { motion } from "framer-motion";
 import { AnimatedPortfolioTitle } from "./animated-title";
 import { ChevronDown } from "lucide-react";
+import { useI18n } from "@/context/i18n";
 
 export function HeroSection() {
+  const { t } = useI18n();
+
   const scrollToAbout = () => {
     document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -23,7 +26,7 @@ export function HeroSection() {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="text-[var(--forest-accent)] text-sm md:text-base tracking-[0.3em] uppercase mb-8 font-sans"
         >
-          Welcome to my creative space
+          {t("hero.welcome")}
         </motion.p>
 
         <AnimatedPortfolioTitle />
@@ -35,7 +38,7 @@ export function HeroSection() {
           className="text-lg md:text-xl mt-8 tracking-wider font-serif italic"
           style={{ color: "rgb(207,231,243)" }}
         >
-          - by Akina -
+          {t("hero.subtitle")}
         </motion.p>
       </motion.div>
 
@@ -47,7 +50,7 @@ export function HeroSection() {
         className="absolute bottom-12 z-20 flex flex-col items-center gap-2 text-[var(--forest-accent)] hover:text-[var(--forest-light)] transition-colors cursor-pointer"
         aria-label="Scroll to About section"
       >
-        <span className="text-sm tracking-widest uppercase font-sans">Explore</span>
+        <span className="text-sm tracking-widest uppercase font-sans">{t("hero.explore")}</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}

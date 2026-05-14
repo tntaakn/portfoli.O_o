@@ -2,16 +2,13 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-
-const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
-];
+import { useI18n } from "@/context/i18n";
+import { LanguageSwitcher } from "./language-switcher";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useI18n();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +18,12 @@ export function Navigation() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const navLinks = [
+    { href: "#about", label: t("nav.about") },
+    { href: "#projects", label: t("nav.projects") },
+    { href: "#contact", label: t("nav.contact") },
+  ];
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
@@ -39,7 +42,7 @@ export function Navigation() {
         }`}
     >
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
-        <div className="flex flex-col items-center">
+        <div className="flex items-center justify-between md:justify-center">
           {/* Desktop Navigation - Centered */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
@@ -55,8 +58,13 @@ export function Navigation() {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden w-full flex items-center justify-between">
+          {/* Language Switcher - Right side */}
+          <div className="hidden md:block absolute right-8">
+            <LanguageSwitcher />
+          </div>
+
+          {/* Mobile Menu Button - Left side */}
+          <div className="md:hidden flex items-center justify-between w-full">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="w-10 h-10 flex items-center justify-center text-[#CFE7F3]"
@@ -64,6 +72,7 @@ export function Navigation() {
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
+            <LanguageSwitcher />
           </div>
         </div>
 

@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "about": "Về tôi",
+    "projects": "Dự án",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "welcome": "Chào mừng đến không gian sáng tạo của tôi",
+    "title": "Thiết kế & Phát triển",
+    "subtitle": "- bởi Akina -",
+    "explore": "Khám phá"
+  },
+  "about": {
+    "title": "Về tôi",
+    "quote": "Thiết kế tốt bắt đầu từ việc hiểu biết về tâm lý học và công nghệ.",
+    "quoteAuthor": "- Don Norman",
+    "greeting": "Xin chào, tôi là Akina",
+    "description": "Cách tiếp cận UI/UX của tôi bắt nguồn từ nền tảng IT. Tôi đam mê hoàn thiện trải nghiệm người dùng. Với nền tảng về kỹ thuật phần mềm, tôi kết hợp chuyên môn của mình với tầm nhìn sáng tạo để xây dựng những sản phẩm vừa có tính thẩm mỹ vừa dễ sử dụng các chức năng.",
+    "skillsTitle": "Kỹ năng",
+    "skills": [
+      "Nghiên cứu UX",
+      "Thiết kế hiệu ứng chuyển động",
+      "Figma",
+      "Adobe Illustrator",
+      "Git / GitHub",
+      "React & Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "experienceTitle": "Giáo dục & Kinh nghiệm",
+    "experiences": [
+      "GPA: 8.12 - Chuyên ngành Kỹ thuật Phần mềm",
+      "Kỹ thuật phân tích yêu cầu (Điểm: A)",
+      "Giao tiếp Người - Máy (Điểm: A)",
+      "Phát triển Ứng dụng Web (Điểm: A)"
+    ],
+    "processTitle": "Quy trình làm việc",
+    "process": [
+      {
+        "step": "BƯỚC 1",
+        "title": "Tìm hiểu và xây dựng chiến lược",
+        "description": "Hiểu rõ mục tiêu dự án, nhu cầu người dùng và yêu cầu kỹ thuật để tạo nền tảng vững chắc."
+      },
+      {
+        "step": "BƯỚC 2",
+        "title": "Thiết kế mẫu",
+        "description": "Tạo thiết kế hợp lý trong Figma với khả năng đáp ứng tốt nhu cầu người dùng."
+      },
+      {
+        "step": "BƯỚC 3",
+        "title": "Phát triển & Triển khai",
+        "description": "Chuyển đổi thiết kế thành mã nguồn bằng React, Next.js và các tiêu chuẩn web hiện đại."
+      },
+      {
+        "step": "BƯỚC 4",
+        "title": "Kiểm tra & Tối ưu",
+        "description": "Đảm bảo tuân thủ WCAG 2.2 AA, tối ưu hóa hiệu suất và tương thích trên các trình duyệt."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Dự án nổi bật",
+    "viewProject": "Xem dự án",
+    "neo_monolith": {
+      "title": "NEO-MONOLITH",
+      "category": "KIẾN TRÚC",
+      "year": "2023",
+      "description": "Một kiệt tác kiến trúc chủ nghĩa tàn khốc thể hiện vẻ đẹp thô sơ của bê tông và độ chính xác hình học. Dự án này khám phá sự giao thoa giữa tính tối giản hiện đại và thiết kế kết cấu vượt thời gian.",
+      "introduction": "Dự án này được ủy thác để tạo ra nhận dạng thương hiệu cho một công ty kiến trúc hiện đại. Mục tiêu là nắm bắt bản chất của thiết kế chủ nghĩa tàn khốc đồng thời duy trì cảm giác ấm áp và dễ tiếp cận.",
+      "roles": [
+        {
+          "title": "Phân Tích Cạnh Tranh UX",
+          "description": "Kiểm tra và so sánh các công ty lớn trong ngành để xác định các điểm đau và cơ hội thiết kế kiến trúc."
+        },
+        {
+          "title": "Thiết Kế UI",
+          "description": "Tạo giao diện chất lượng cao cho hệ sinh thái thương hiệu, đảm bảo hành trình người dùng liền mạch và chức năng."
+        },
+        {
+          "title": "Tài Sản Hình Ảnh & Biểu Tượng",
+          "description": "Thiết kế bộ biểu tượng tùy chỉnh và tài liệu quảng cáo để duy trì tính nhất quán thương hiệu trong toàn bộ ứng dụng."
+        }
+      ]
+    },
+    "silk_steel": {
+      "title": "SILK & STEEL",
+      "category": "BIÊN TẬP",
+      "year": "2024",
+      "description": "Một loạt biên tập thời trang đối lập các vải mỏng manh với nền tảng công nghiệp, tạo nên một câu chuyện hình ảnh hấp dẫn về sức mạnh và thanh lịch.",
+      "introduction": "Một bộ ảnh thời trang cao cấp khám phá sự tương phản giữa sự mềm mại và sức mạnh. Loạt ảnh này được giới thiệu trong nhiều ấn phẩm thời trang và nhận được những lời khen ngợi về cách tiếp cận hình ảnh táo bạo.",
+      "roles": [
+        {
+          "title": "Hướng Dẫn Nghệ Thuật",
+          "description": "Dẫn dắt tầm nhìn sáng tạo và kể chuyện hình ảnh cho toàn bộ loạt biên tập."
+        },
+        {
+          "title": "Tư Vấn Kiểu Dáng",
+          "description": "Cộng tác với các nhà tạo kiểu để đạt được sự cân bằng hoàn hảo giữa vải mỏng manh và thẩm mỹ công nghiệp."
+        },
+        {
+          "title": "Chỉnh Sửa Ảnh",
+          "description": "Công việc hậu kỳ bao gồm điều chỉnh màu sắc, chỉnh sửa và điều chỉnh thành phần cuối cùng."
+        }
+      ]
+    },
+    "digital_dreams": {
+      "title": "DIGITAL DREAMS",
+      "category": "THIẾT KẾ WEB",
+      "year": "2024",
+      "description": "Một trải nghiệm web hấp dẫn đẩy ranh giới của tương tác kỹ thuật số, với các yếu tố 3D và hoạt ảnh chảy.",
+      "introduction": "Dự án này tưởng tượng lại trải nghiệm kỹ thuật số thông qua thiết kế UI/UX sáng tạo. Trang web có các hoạt ảnh hiện đại và các phần tử tương tác hấp dẫn người dùng ở một cấp độ sâu hơn.",
+      "roles": [
+        {
+          "title": "Thiết Kế UI/UX",
+          "description": "Tạo giao diện người dùng trực quan với các hoạt ảnh hiện đại và các phần tử tương tác."
+        },
+        {
+          "title": "Tạo Mẫu",
+          "description": "Xây dựng các nguyên mẫu tương tác để kiểm tra và xác nhận các khái niệm thiết kế trước khi phát triển."
+        },
+        {
+          "title": "Phát Triển Front-end",
+          "description": "Triển khai thiết kế đáp ứng bằng các framework hiện đại và thư viện hoạt ảnh."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Hãy kết nối",
+    "subtitle": "Có ý tưởng về một dự án hoặc chỉ muốn trò chuyện? Tôi rất muốn nghe từ bạn.",
+    "contactInfo": "Thông tin liên hệ",
+    "email": "Email",
+    "location": "Địa chỉ",
+    "phone": "Điện Thoại",
+    "contactForm": "Gửi tin nhắn",
+    "name": "Tên của bạn",
+    "emailPlaceholder": "Email của bạn",
+    "message": "Hãy gửi tin nhắn cho tôi...",
+    "send": "Gửi tin nhắn",
+    "sending": "Đang gửi...",
+    "successMessage": "Cảm ơn tin nhắn của bạn! Tôi sẽ sớm phản hồi."
+  }
+}

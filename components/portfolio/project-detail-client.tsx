@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import type { Project } from "@/data/projects";
+import { withBasePath } from "@/lib/utils";
 
 export default function ProjectDetailClient({ project }: { project: Project }) {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
@@ -37,7 +38,7 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
           >
             <div className="relative aspect-square overflow-hidden rounded-2xl bg-[var(--forest-secondary)]/30">
               <img
-                src={project.galleryImages[selectedImageIndex]}
+                src={withBasePath(project.galleryImages[selectedImageIndex])}
                 alt={`${project.title} - Image ${selectedImageIndex + 1}`}
                 className="w-full h-full object-cover transition-all duration-500"
                 crossOrigin="anonymous"
@@ -55,7 +56,7 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
                     }`}
                 >
                   <img
-                    src={img}
+                    src={withBasePath(img)}
                     alt={`Thumbnail ${index + 1}`}
                     className="w-full h-full object-cover"
                     crossOrigin="anonymous"
@@ -101,7 +102,7 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.4 }} className="mt-20 space-y-8">
           {project.additionalImages.map((img, index) => (
             <motion.div key={index} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.6, delay: index * 0.1 }} className="relative w-full overflow-hidden rounded-2xl">
-              <img src={img} alt={`${project.title} - Additional ${index + 1}`} className="w-full h-auto object-cover" crossOrigin="anonymous" />
+              <img src={withBasePath(img)} alt={`${project.title} - Additional ${index + 1}`} className="w-full h-auto object-cover" crossOrigin="anonymous" />
             </motion.div>
           ))}
         </motion.div>

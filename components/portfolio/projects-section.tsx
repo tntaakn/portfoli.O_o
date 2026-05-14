@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useState, useRef } from "react";
 import Link from "next/link";
 import { projects } from "@/data/projects";
+import { withBasePath } from "@/lib/utils";
 
 export function ProjectsSection() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
@@ -79,7 +80,7 @@ export function ProjectsSection() {
                 >
                   {/* Image */}
                   <img
-                    src={project.image}
+                    src={withBasePath(project.image)}
                     alt={project.title}
                     className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${hoveredProject === project.id
                       ? "grayscale-0 scale-105"
@@ -92,7 +93,7 @@ export function ProjectsSection() {
                   {project.video && (
                     <video
                       ref={(el) => { videoRefs.current[project.id] = el; }}
-                      src={project.video}
+                      src={withBasePath(project.video)}
                       muted
                       loop
                       playsInline

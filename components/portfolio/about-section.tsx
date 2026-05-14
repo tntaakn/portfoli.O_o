@@ -3,58 +3,53 @@
 import { motion } from "framer-motion";
 import { GlassCard } from "./glass-card";
 import { Lightbulb, Palette, Code, CheckCircle } from "lucide-react";
+import { useI18n } from "@/context/i18n";
 
-const skills = [
-  "UX Research",
-  "Motion Design",
-  "Figma",
-  "Adobe Illustrator",
-  "Git / GitHub",
-  "React & Next.js",
-  "TypeScript",
-  "Tailwind CSS",
-
-];
-
-const experiences = [
-  "GPA: 8.12 - Major of Software Engineering",
-  "Requirement Engineering (Grade: A)",
-  "Human-Computer Interaction (Grade: A)",
-  "Web Application Development (Grade: A)",
-];
-
-const workProcess = [
-  {
-    icon: Lightbulb,
-    title: "Discovery & Strategy",
-    description: "Understanding project goals, user needs, and technical requirements to create a solid foundation.",
-    step: "STEP 1",
-    color: "from-pink-500 to-pink-400",
-  },
-  {
-    icon: Palette,
-    title: "Design & Prototyping",
-    description: "Creating pixel-perfect designs in Figma with accessibility and responsiveness in mind.",
-    step: "STEP 2",
-    color: "from-purple-500 to-purple-400",
-  },
-  {
-    icon: Code,
-    title: "Development & Implementation",
-    description: "Converting designs to production-ready code using React, Next.js and modern web standards.",
-    step: "STEP 3",
-    color: "from-green-500 to-green-400",
-  },
-  {
-    icon: CheckCircle,
-    title: "Testing & Optimization",
-    description: "Ensuring WCAG 2.2 AA compliance, performance optimization, and cross-browser compatibility.",
-    step: "STEP 4",
-    color: "from-orange-500 to-orange-400",
-  },
-];
+const iconMap = {
+  Lightbulb,
+  Palette,
+  Code,
+  CheckCircle,
+};
 
 export function AboutSection() {
+  const { t } = useI18n();
+
+  const skills = t("about.skills") as string[];
+  const experiences = t("about.experiences") as string[];
+  const processItems = t("about.process") as Array<{ step: string; title: string; description: string }>;
+
+  const workProcess = [
+    {
+      icon: Lightbulb,
+      title: processItems[0]?.title || "Discovery & Strategy",
+      description: processItems[0]?.description || "Understanding project goals, user needs, and technical requirements to create a solid foundation.",
+      step: processItems[0]?.step || "STEP 1",
+      color: "from-pink-500 to-pink-400",
+    },
+    {
+      icon: Palette,
+      title: processItems[1]?.title || "Design & Prototyping",
+      description: processItems[1]?.description || "Creating pixel-perfect designs in Figma with accessibility and responsiveness in mind.",
+      step: processItems[1]?.step || "STEP 2",
+      color: "from-purple-500 to-purple-400",
+    },
+    {
+      icon: Code,
+      title: processItems[2]?.title || "Development & Implementation",
+      description: processItems[2]?.description || "Converting designs to production-ready code using React, Next.js and modern web standards.",
+      step: processItems[2]?.step || "STEP 3",
+      color: "from-green-500 to-green-400",
+    },
+    {
+      icon: CheckCircle,
+      title: processItems[3]?.title || "Testing & Optimization",
+      description: processItems[3]?.description || "Ensuring WCAG 2.2 AA compliance, performance optimization, and cross-browser compatibility.",
+      step: processItems[3]?.step || "STEP 4",
+      color: "from-orange-500 to-orange-400",
+    },
+  ];
+
   return (
     <section id="about" className="relative min-h-screen py-20 px-6 md:px-8 z-20">
       <div className="max-w-6xl mx-auto">
@@ -67,7 +62,7 @@ export function AboutSection() {
           className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#CFE7F3] mb-12 text-center"
           style={{ fontFamily: "var(--font-playfair), serif" }}
         >
-          About Me
+          {t("about.title")}
         </motion.h2>
 
         {/* Quote */}
@@ -80,10 +75,10 @@ export function AboutSection() {
         >
           <blockquote className="text-xl md:text-3xl italic text-[#E6F5F2] leading-relaxed max-w-4x2 mx-auto">
             <span className="text-[var(--forest-accent)] text-4xl">&ldquo;</span>
-            Good design starts with an understanding of psychology and technology.
+            {t("about.quote")}
             <span className="text-[var(--forest-accent)] text-4xl">&rdquo;</span>
           </blockquote>
-          <cite className="text-[var(--forest-accent)] text-lg mt-4 block">- Don Norman</cite>
+          <cite className="text-[var(--forest-accent)] text-lg mt-4 block">{t("about.quoteAuthor")}</cite>
         </motion.div>
 
         <GlassCard className="p-8 md:p-8 mb-12" delay={0.1}>
@@ -94,12 +89,10 @@ export function AboutSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h2 className="text-3xl md:text-4xl font-serif text-[#CFE7F3] mb-6" style={{ fontFamily: "var(--font-playfair), serif", fontWeight: 600, fontSize: "24px" }}>
-              Hello, I'm Akina
+              {t("about.greeting")}
             </h2>
             <p className="text-[#A9C9E2] text-lg leading-relaxed" style={{ textAlign: "justify", fontSize: "16px" }}>
-              My approach to UI/UX design is rooted in my IT foundation. I&apos;m passionate about perfecting the user
-              journey and finding the &apos;sweet spot&apos; between business targets and practical needs. I believe that sustainable
-              products are born from the intersection of logical engineering and sophisticated design.
+              {t("about.description")}
             </p>
           </motion.div>
         </GlassCard>
@@ -108,7 +101,7 @@ export function AboutSection() {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <GlassCard className="p-8" delay={0.2}>
             <h3 className="text-2xl font-serif text-[#CFE7F3] mb-6" style={{ fontFamily: "var(--font-playfair), serif", fontWeight: 600 }}>
-              Skills
+              {t("about.skillsTitle")}
             </h3>
             <div className="flex flex-wrap gap-3">
               {skills.map((skill, index) => (
@@ -128,7 +121,7 @@ export function AboutSection() {
 
           <GlassCard className="p-8" delay={0.3}>
             <h3 className="text-2xl font-serif text-[#CFE7F3] mb-6" style={{ fontFamily: "var(--font-playfair), serif", fontWeight: 600 }}>
-              University of Information Technology
+              {t("about.experienceTitle")}
             </h3>
             <ul className="space-y-4">
               {experiences.map((exp, index) => (
@@ -157,7 +150,7 @@ export function AboutSection() {
           className="mb-8"
         >
           <h3 className="text-3xl font-serif text-[#CFE7F3] mb-8 text-center" style={{ fontFamily: "var(--font-playfair), serif", fontWeight: 600 }}>
-            My Work Process
+            {t("about.processTitle")}
           </h3>
         </motion.div>
 
@@ -178,7 +171,6 @@ export function AboutSection() {
               <p className="text-[#A9C9E2]/80 text-sm leading-relaxed mb-4">
                 {step.description}
               </p>
-
 
               {/* Connector line */}
               {index < workProcess.length - 1 && (

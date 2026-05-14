@@ -5,8 +5,10 @@ import { useState, useRef } from "react";
 import Link from "next/link";
 import { projects } from "@/data/projects";
 import { withBasePath } from "@/lib/utils";
+import { useI18n } from "@/context/i18n";
 
 export function ProjectsSection() {
+  const { t } = useI18n();
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
   const videoRefs = useRef<{ [key: number]: HTMLVideoElement | null }>({});
 
@@ -48,7 +50,7 @@ export function ProjectsSection() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#CFE7F3]">
-              My Projects
+              {t("projects.title")}
             </h2>
             <p className="text-[#A9C9E2] text-lg mt-4 max-w-2xl">
               A curated selection of my recent work spanning app design and branding.

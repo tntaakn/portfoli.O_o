@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "about": "Về Tôi",
+    "projects": "Dự Án",
+    "contact": "Liên Hệ"
+  },
+  "hero": {
+    "welcome": "Chào mừng đến không gian sáng tạo của tôi",
+    "title": "Thiết Kế & Phát Triển",
+    "subtitle": "- bởi Akina -",
+    "explore": "Khám Phá"
+  },
+  "about": {
+    "title": "Về Tôi",
+    "quote": "Thiết kế tốt bắt đầu từ việc hiểu biết về tâm lý học và công nghệ.",
+    "quoteAuthor": "- Don Norman",
+    "greeting": "Xin chào, tôi là Akina",
+    "description": "Cách tiếp cận UI/UX của tôi bắt nguồn từ nền tảng IT của tôi. Tôi đam mê hoàn thiện trải nghiệm người dùng. Với nền tảng về kỹ thuật phần mềm, tôi kết hợp chuyên môn kỹ thuật với tầm nhìn sáng tạo để xây dựng những sản phẩm vừa đẹp vừa chức năng.",
+    "skillsTitle": "Kỹ Năng",
+    "skills": [
+      "Nghiên Cứu UX",
+      "Thiết Kế Chuyển Động",
+      "Figma",
+      "Adobe Illustrator",
+      "Git / GitHub",
+      "React & Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "experienceTitle": "Giáo Dục & Kinh Nghiệm",
+    "experiences": [
+      "GPA: 8.12 - Chuyên Ngành Kỹ Thuật Phần Mềm",
+      "Kỹ Thuật Yêu Cầu (Điểm: A)",
+      "Tương Tác Con Người - Máy Tính (Điểm: A)",
+      "Phát Triển Ứng Dụng Web (Điểm: A)"
+    ],
+    "processTitle": "Quy Trình Làm Việc",
+    "process": [
+      {
+        "step": "BƯỚC 1",
+        "title": "Khám Phá & Chiến Lược",
+        "description": "Hiểu rõ mục tiêu dự án, nhu cầu người dùng và yêu cầu kỹ thuật để tạo nền tảng vững chắc."
+      },
+      {
+        "step": "BƯỚC 2",
+        "title": "Thiết Kế & Tạo Mẫu",
+        "description": "Tạo thiết kế hoàn hảo trong Figma với khả năng truy cập và đáp ứng."
+      },
+      {
+        "step": "BƯỚC 3",
+        "title": "Phát Triển & Triển Khai",
+        "description": "Chuyển đổi thiết kế thành mã sản xuất bằng React, Next.js và tiêu chuẩn web hiện đại."
+      },
+      {
+        "step": "BƯỚC 4",
+        "title": "Kiểm Tra & Tối Ưu Hóa",
+        "description": "Đảm bảo tuân thủ WCAG 2.2 AA, tối ưu hóa hiệu suất và tương thích trên các trình duyệt."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Dự Án Nổi Bật",
+    "viewProject": "Xem Dự Án",
+    "neo_monolith": {
+      "title": "NEO-MONOLITH",
+      "category": "KIẾN TRÚC",
+      "year": "2023",
+      "description": "Một kiệt tác kiến trúc chủ nghĩa tàn khốc thể hiện vẻ đẹp thô sơ của bê tông và độ chính xác hình học. Dự án này khám phá sự giao thoa giữa tính tối giản hiện đại và thiết kế kết cấu vượt thời gian.",
+      "introduction": "Dự án này được ủy thác để tạo ra nhận dạng thương hiệu cho một công ty kiến trúc hiện đại. Mục tiêu là nắm bắt bản chất của thiết kế chủ nghĩa tàn khốc đồng thời duy trì cảm giác ấm áp và dễ tiếp cận.",
+      "roles": [
+        {
+          "title": "Phân Tích Cạnh Tranh UX",
+          "description": "Kiểm tra và so sánh các công ty lớn trong ngành để xác định các điểm đau và cơ hội thiết kế kiến trúc."
+        },
+        {
+          "title": "Thiết Kế UI",
+          "description": "Tạo giao diện chất lượng cao cho hệ sinh thái thương hiệu, đảm bảo hành trình người dùng liền mạch và chức năng."
+        },
+        {
+          "title": "Tài Sản Hình Ảnh & Biểu Tượng",
+          "description": "Thiết kế bộ biểu tượng tùy chỉnh và tài liệu quảng cáo để duy trì tính nhất quán thương hiệu trong toàn bộ ứng dụng."
+        }
+      ]
+    },
+    "silk_steel": {
+      "title": "SILK & STEEL",
+      "category": "BIÊN TẬP",
+      "year": "2024",
+      "description": "Một loạt biên tập thời trang đối lập các vải mỏng manh với nền tảng công nghiệp, tạo nên một câu chuyện hình ảnh hấp dẫn về sức mạnh và thanh lịch.",
+      "introduction": "Một bộ ảnh thời trang cao cấp khám phá sự tương phản giữa sự mềm mại và sức mạnh. Loạt ảnh này được giới thiệu trong nhiều ấn phẩm thời trang và nhận được những lời khen ngợi về cách tiếp cận hình ảnh táo bạo.",
+      "roles": [
+        {
+          "title": "Hướng Dẫn Nghệ Thuật",
+          "description": "Dẫn dắt tầm nhìn sáng tạo và kể chuyện hình ảnh cho toàn bộ loạt biên tập."
+        },
+        {
+          "title": "Tư Vấn Kiểu Dáng",
+          "description": "Cộng tác với các nhà tạo kiểu để đạt được sự cân bằng hoàn hảo giữa vải mỏng manh và thẩm mỹ công nghiệp."
+        },
+        {
+          "title": "Chỉnh Sửa Ảnh",
+          "description": "Công việc hậu kỳ bao gồm điều chỉnh màu sắc, chỉnh sửa và điều chỉnh thành phần cuối cùng."
+        }
+      ]
+    },
+    "digital_dreams": {
+      "title": "DIGITAL DREAMS",
+      "category": "THIẾT KẾ WEB",
+      "year": "2024",
+      "description": "Một trải nghiệm web hấp dẫn đẩy ranh giới của tương tác kỹ thuật số, với các yếu tố 3D và hoạt ảnh chảy.",
+      "introduction": "Dự án này tưởng tượng lại trải nghiệm kỹ thuật số thông qua thiết kế UI/UX sáng tạo. Trang web có các hoạt ảnh hiện đại và các phần tử tương tác hấp dẫn người dùng ở một cấp độ sâu hơn.",
+      "roles": [
+        {
+          "title": "Thiết Kế UI/UX",
+          "description": "Tạo giao diện người dùng trực quan với các hoạt ảnh hiện đại và các phần tử tương tác."
+        },
+        {
+          "title": "Tạo Mẫu",
+          "description": "Xây dựng các nguyên mẫu tương tác để kiểm tra và xác nhận các khái niệm thiết kế trước khi phát triển."
+        },
+        {
+          "title": "Phát Triển Front-end",
+          "description": "Triển khai thiết kế đáp ứng bằng các framework hiện đại và thư viện hoạt ảnh."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Hãy Kết Nối",
+    "subtitle": "Có dự án trong tâm trí hoặc chỉ muốn trò chuyện? Tôi rất muốn nghe từ bạn.",
+    "contactInfo": "Thông Tin Liên Hệ",
+    "email": "Email",
+    "location": "Vị Trí",
+    "phone": "Điện Thoại",
+    "contactForm": "Gửi Tin Nhắn",
+    "name": "Tên Của Bạn",
+    "emailPlaceholder": "Email Của Bạn",
+    "message": "Tin Nhắn Của Bạn",
+    "send": "Gửi Tin Nhắn",
+    "sending": "Đang Gửi...",
+    "successMessage": "Cảm ơn tin nhắn của bạn! Tôi sẽ sớm trả lời bạn."
+  }
+}

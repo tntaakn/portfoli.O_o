@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import { Mail, MapPin, Phone, Send, Linkedin, Github } from "lucide-react";
+import { useI18n } from "@/context/i18n";
 
 export function ContactSection() {
+  const { t } = useI18n();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,7 +20,7 @@ export function ContactSection() {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     setIsSubmitting(false);
     setFormData({ name: "", email: "", message: "" });
-    alert("Thank you for your message! I'll get back to you soon.");
+    alert(t("contact.successMessage"));
   };
 
   return (
@@ -26,10 +28,10 @@ export function ContactSection() {
       <div className="container mx-auto px-4 md:px-8 max-w-6xl">
         {/* Section Header */}
         <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#CFE7F3] mb-6 text-center">
-          Let&apos;s Connect
+          {t("contact.title")}
         </h2>
         <p className="text-[#A9C9E2] text-lg text-center max-w-2xl mx-auto mb-16">
-          Have a project in mind or just want to chat? I&apos;d love to hear from you.
+          {t("contact.subtitle")}
         </p>
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
@@ -37,7 +39,7 @@ export function ContactSection() {
           <div className="space-y-8">
             <div className="glass rounded-2xl p-8 shadow-xl">
               <h3 className="text-2xl font-bold text-[#CFE7F3] mb-6">
-                Contact Information
+                {t("contact.contactInfo")}
               </h3>
 
               <div className="space-y-6">
@@ -46,7 +48,7 @@ export function ContactSection() {
                     <Mail className="w-5 h-5 text-[#CFE7F3]" />
                   </div>
                   <div>
-                    <p className="text-sm text-[#A9C9E2]">Email</p>
+                    <p className="text-sm text-[#A9C9E2]">{t("contact.email")}</p>
                     <p className="font-medium text-[#E6F5FB]">annhannh331@gmail.com</p>
                   </div>
                 </div>
@@ -56,7 +58,7 @@ export function ContactSection() {
                     <MapPin className="w-5 h-5 text-[#CFE7F3]" />
                   </div>
                   <div>
-                    <p className="text-sm text-[#A9C9E2]">Location</p>
+                    <p className="text-sm text-[#A9C9E2]">{t("contact.location")}</p>
                     <p className="font-medium text-[#E6F5FB]">Ho Chi Minh, VN</p>
                   </div>
                 </div>
@@ -66,7 +68,7 @@ export function ContactSection() {
                     <Phone className="w-5 h-5 text-[#CFE7F3]" />
                   </div>
                   <div>
-                    <p className="text-sm text-[#A9C9E2]">Phone</p>
+                    <p className="text-sm text-[#A9C9E2]">{t("contact.phone")}</p>
                     <p className="font-medium text-[#E6F5FB]">+84 948 969 316</p>
                   </div>
                 </div>
@@ -99,7 +101,7 @@ export function ContactSection() {
             className="glass rounded-2xl p-8 shadow-xl"
           >
             <h3 className="text-2xl font-bold text-[#CFE7F3] mb-6">
-              Send a Message
+              {t("contact.contactForm")}
             </h3>
 
             <div className="space-y-6">
@@ -108,7 +110,7 @@ export function ContactSection() {
                   htmlFor="name"
                   className="block text-sm font-medium text-[#CFE7F3] mb-2"
                 >
-                  Name
+                  {t("contact.name")}
                 </label>
                 <input
                   type="text"
@@ -117,7 +119,7 @@ export function ContactSection() {
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
                   className="w-full px-4 py-3 bg-[#0a1420]/50 border border-[rgba(169,201,226,0.2)] rounded-xl text-[#E6F5FB] placeholder:text-[#A9C9E2] focus:outline-none focus:ring-2 focus:ring-[#F4FAFD]/50 focus:border-transparent transition-all backdrop-blur-sm"
-                  placeholder="Your name"
+                  placeholder={t("contact.name")}
                 />
               </div>
 
@@ -126,7 +128,7 @@ export function ContactSection() {
                   htmlFor="email"
                   className="block text-sm font-medium text-[#CFE7F3] mb-2"
                 >
-                  Email
+                  {t("contact.email")}
                 </label>
                 <input
                   type="email"
@@ -135,7 +137,7 @@ export function ContactSection() {
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
                   className="w-full px-4 py-3 bg-[#0a1420]/50 border border-[rgba(169,201,226,0.2)] rounded-xl text-[#E6F5FB] placeholder:text-[#A9C9E2] focus:outline-none focus:ring-2 focus:ring-[#F4FAFD]/50 focus:border-transparent transition-all backdrop-blur-sm"
-                  placeholder="your@email.com"
+                  placeholder={t("contact.emailPlaceholder")}
                 />
               </div>
 
@@ -144,7 +146,7 @@ export function ContactSection() {
                   htmlFor="message"
                   className="block text-sm font-medium text-[#CFE7F3] mb-2"
                 >
-                  Message
+                  {t("contact.message")}
                 </label>
                 <textarea
                   id="message"
@@ -153,7 +155,7 @@ export function ContactSection() {
                   required
                   rows={5}
                   className="w-full px-4 py-3 bg-[#0a1420]/50 border border-[rgba(169,201,226,0.2)] rounded-xl text-[#E6F5FB] placeholder:text-[#A9C9E2] focus:outline-none focus:ring-2 focus:ring-[#F4FAFD]/50 focus:border-transparent transition-all resize-none backdrop-blur-sm"
-                  placeholder="Tell me about your project..."
+                  placeholder={t("contact.message")}
                 />
               </div>
 
@@ -163,10 +165,10 @@ export function ContactSection() {
                 className="w-full py-4 bg-[#CFE7F3] text-[#0a1420] font-semibold rounded-xl hover:bg-[#1560bd] hover:text-white transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
               >
                 {isSubmitting ? (
-                  "Sending..."
+                  t("contact.sending")
                 ) : (
                   <>
-                    Send Message
+                    {t("contact.send")}
                     <Send className="w-4 h-4" />
                   </>
                 )}

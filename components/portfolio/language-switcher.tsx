@@ -32,7 +32,7 @@ export function LanguageSwitcher() {
                 : "text-[#CFE7F3] hover:bg-[#CFE7F3]/10"
             }`}
           >
-            English
+            EN
           </button>
           <button
             onClick={() => {
@@ -45,7 +45,7 @@ export function LanguageSwitcher() {
                 : "text-[#CFE7F3] hover:bg-[#CFE7F3]/10"
             }`}
           >
-            Tiếng Việt
+            VI
           </button>
         </div>
       )}

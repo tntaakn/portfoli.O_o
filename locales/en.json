@@ -59,7 +59,7 @@
     ]
   },
   "projects": {
-    "title": "Featured Projects",
+    "title": "My Projects",
     "viewProject": "View Project",
     "neo_monolith": {
       "title": "NEO-MONOLITH",

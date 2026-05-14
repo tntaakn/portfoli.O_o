@@ -70,7 +70,7 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-col space-y-8 pt-0"
+            className="flex flex-col space-y-6 pt-0"
           >
             <p className="text-sm tracking-[0.3em] font-medium mb-3" style={{ color: project.color }}>
               {project.category}
@@ -80,14 +80,18 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
               {project.title}
             </h1>
 
-            <div className="space-y-3">
+            <div className="space-y-2">
+              <h2 className="text-sm tracking-[0.2em] text-[var(--forest-accent)] uppercase font-semibold">{project.description}</h2>
+            </div>
+
+            <div className="space-y-2">
               <h2 className="text-sm tracking-[0.2em] text-[var(--forest-accent)] font-semibold">INTRODUCTION</h2>
               <p className="text-[var(--forest-light)]/80 leading-relaxed text-base font-normal">{project.introduction}</p>
             </div>
 
-            <div className="space-y-4">
-              <h2 className="text-sm tracking-[0.2em] text-[var(--forest-accent)] font-semibold">MY ROLE</h2>
-              <ul className="space-y-4">
+            <div className="space-y-2">
+              <h2 className="text-sm tracking-[0.2em] text-[var(--forest-accent)] font-semibold">MY ROLE: {project.role}</h2>
+              <ul className="space-y-2">
                 {project.roleItems.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <span className="w-2 h-2 rounded-full mt-2 flex-shrink-0 bg-[var(--forest-light)]/80" />
@@ -95,6 +99,10 @@ export default function ProjectDetailClient({ project }: { project: Project }) {
                   </li>
                 ))}
               </ul>
+            </div>
+            <div className="space-y-2">
+              <h2 className="text-sm tracking-[0.2em] text-[var(--forest-accent)] font-semibold">OUTCOME</h2>
+              <p className="text-[var(--forest-light)]/80 leading-relaxed text-base font-normal">{project.outcome}</p>
             </div>
           </motion.div>
         </div>

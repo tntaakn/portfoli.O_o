@@ -13,4 +13,8 @@ next.user-config.*
 # Common ignores
 node_modules
 .next/
+out/
 .DS_Store
+
+# Windows metadata streams that can break checkout on Windows
+*:Zone.Identifier

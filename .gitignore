@@ -18,3 +18,4 @@ out/
 
 # Windows metadata streams that can break checkout on Windows
 *:Zone.Identifier
+next-env.d.ts

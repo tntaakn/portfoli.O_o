@@ -61,68 +61,85 @@
   "projects": {
     "title": "Dự án nổi bật",
     "viewProject": "Xem dự án",
-    "neo_monolith": {
-      "title": "NEO-MONOLITH",
-      "category": "KIẾN TRÚC",
-      "year": "2023",
-      "description": "Một kiệt tác kiến trúc chủ nghĩa tàn khốc thể hiện vẻ đẹp thô sơ của bê tông và độ chính xác hình học. Dự án này khám phá sự giao thoa giữa tính tối giản hiện đại và thiết kế kết cấu vượt thời gian.",
-      "introduction": "Dự án này được ủy thác để tạo ra nhận dạng thương hiệu cho một công ty kiến trúc hiện đại. Mục tiêu là nắm bắt bản chất của thiết kế chủ nghĩa tàn khốc đồng thời duy trì cảm giác ấm áp và dễ tiếp cận.",
+    "findbeauty": {
+      "title": "FindBeauty",
+      "category": "E-CATALOGUE",
+      "year": "2025",
+      "description": "Nền tảng giới thiệu mỹ phẩm tập trung vào UX",
+      "introduction": "Người dùng thường gặp tình trạng \"quá tải thông tin\" khi phải duyệt qua hàng nghìn loại mỹ phẩm. Mục tiêu của tôi là giúp họ tìm mỹ phẩm phù hợp trong thời gian ngắn nhất.",
+      "role": "Trưởng nhóm UX Designer - Team 3",
       "roles": [
         {
-          "title": "Phân Tích Cạnh Tranh UX",
-          "description": "Kiểm tra và so sánh các công ty lớn trong ngành để xác định các điểm đau và cơ hội thiết kế kiến trúc."
+          "title": "Luồng người dùng phân nhánh",
+          "description": "Thiết kế hai hành trình riêng: nhóm \"Biết mình cần gì\" (lọc và so sánh) và nhóm \"Bắt đầu tìm hiểu\" (quiz phân tích da bằng AI)."
         },
         {
-          "title": "Thiết Kế UI",
-          "description": "Tạo giao diện chất lượng cao cho hệ sinh thái thương hiệu, đảm bảo hành trình người dùng liền mạch và chức năng."
+          "title": "Hệ thống so sánh",
+          "description": "Xây dựng giao diện so sánh song song trực quan, tinh giản thao tác bằng cách loại bỏ quá trình chuyển tab liên tục."
         },
         {
-          "title": "Tài Sản Hình Ảnh & Biểu Tượng",
-          "description": "Thiết kế bộ biểu tượng tùy chỉnh và tài liệu quảng cáo để duy trì tính nhất quán thương hiệu trong toàn bộ ứng dụng."
+          "title": "Bộ lọc nâng cao",
+          "description": "Thiết kế hệ thống lọc đa tiêu chí với logic chặt chẽ để đảm bảo kết quả chính xác nhất."
         }
-      ]
+      ],
+      "outcome": "Đạt hơn 85% phản hồi tích cực từ giảng viên và sinh viên trong quá trình kiểm thử khả dụng nhờ giao diện cá nhân hóa, tinh gọn."
     },
-    "silk_steel": {
-      "title": "SILK & STEEL",
-      "category": "BIÊN TẬP",
-      "year": "2024",
-      "description": "Một loạt biên tập thời trang đối lập các vải mỏng manh với nền tảng công nghiệp, tạo nên một câu chuyện hình ảnh hấp dẫn về sức mạnh và thanh lịch.",
-      "introduction": "Một bộ ảnh thời trang cao cấp khám phá sự tương phản giữa sự mềm mại và sức mạnh. Loạt ảnh này được giới thiệu trong nhiều ấn phẩm thời trang và nhận được những lời khen ngợi về cách tiếp cận hình ảnh táo bạo.",
+    "techdies": {
+      "title": "Techdies",
+      "category": "NỀN TẢNG TƯƠNG TÁC",
+      "year": "2026",
+      "description": "Học tiếng Anh qua trò chơi tích hợp AI",
+      "introduction": "Mục tiêu của tôi là biến việc học tiếng Anh từ một nhiệm vụ lặp lại thành hành trình nhập vai \"khám phá không gian\", giúp duy trì sự tập trung của trẻ trong quá trình tiếp thu ngôn ngữ.",
+      "role": "BA, UI/UX Designer & Frontend Developer",
       "roles": [
         {
-          "title": "Hướng Dẫn Nghệ Thuật",
-          "description": "Dẫn dắt tầm nhìn sáng tạo và kể chuyện hình ảnh cho toàn bộ loạt biên tập."
+          "title": "Phát triển UX định hướng game",
+          "description": "Tích hợp nhiều cơ chế trò chơi như bảng xếp hạng, flashcard và \"nhiệm vụ\" tương tác để duy trì động lực học tập dài hạn."
         },
         {
-          "title": "Tư Vấn Kiểu Dáng",
-          "description": "Cộng tác với các nhà tạo kiểu để đạt được sự cân bằng hoàn hảo giữa vải mỏng manh và thẩm mỹ công nghiệp."
-        },
-        {
-          "title": "Chỉnh Sửa Ảnh",
-          "description": "Công việc hậu kỳ bao gồm điều chỉnh màu sắc, chỉnh sửa và điều chỉnh thành phần cuối cùng."
+          "title": "Mascot và nhận diện thương hiệu",
+          "description": "Sử dụng Adobe Illustrator và Figma để xây dựng mascot \"Techdies\" cùng hệ thống background phù hợp với định hướng giáo dục thú vị của thương hiệu."
         }
-      ]
+      ],
+      "outcome": "Duy trì mức giữ chân người dùng cao với hơn 70% đánh giá tích cực từ giáo viên và phụ huynh. Đồng thời hoàn thiện tài liệu GELW_SRS, đảm bảo đồng bộ giữa phân tích nghiệp vụ và triển khai kỹ thuật."
     },
-    "digital_dreams": {
-      "title": "DIGITAL DREAMS",
-      "category": "THIẾT KẾ WEB",
-      "year": "2024",
-      "description": "Một trải nghiệm web hấp dẫn đẩy ranh giới của tương tác kỹ thuật số, với các yếu tố 3D và hoạt ảnh chảy.",
-      "introduction": "Dự án này tưởng tượng lại trải nghiệm kỹ thuật số thông qua thiết kế UI/UX sáng tạo. Trang web có các hoạt ảnh hiện đại và các phần tử tương tác hấp dẫn người dùng ở một cấp độ sâu hơn.",
+    "serinity_hotel": {
+      "title": "SERINITY HOTEL",
+      "category": "NỀN TẢNG ĐẶT PHÒNG KHÁCH SẠN",
+      "year": "2025",
+      "description": "Trải nghiệm đặt phòng liền mạch trong ngành khách sạn",
+      "introduction": "Quy trình đặt phòng phức tạp thường là nguyên nhân chính khiến người dùng rời bỏ nền tảng. Mục tiêu của tôi là thiết kế một giao diện đúng tinh thần \"Serenity\", cho phép tìm kiếm, so sánh và đặt phòng chỉ trong vài bước tối giản.",
+      "role": "UI/UX Designer & Frontend Developer",
       "roles": [
         {
-          "title": "Thiết Kế UI/UX",
-          "description": "Tạo giao diện người dùng trực quan với các hoạt ảnh hiện đại và các phần tử tương tác."
+          "title": "Công cụ đặt phòng theo chiến lược Hero-Centric",
+          "description": "Đặt các công cụ đặt phòng quan trọng ngay trung tâm trang chủ để thúc đẩy hành động tức thì."
         },
         {
-          "title": "Tạo Mẫu",
-          "description": "Xây dựng các nguyên mẫu tương tác để kiểm tra và xác nhận các khái niệm thiết kế trước khi phát triển."
-        },
-        {
-          "title": "Phát Triển Front-end",
-          "description": "Triển khai thiết kế đáp ứng bằng các framework hiện đại và thư viện hoạt ảnh."
+          "title": "Bảng điều khiển hỗ trợ người dùng",
+          "description": "Phát triển trang \"My Booking\" giúp quản lý kỳ nghỉ liền mạch, tăng tính cá nhân hóa và khả năng trở lại nền tảng."
         }
-      ]
+      ],
+      "outcome": "Xây dựng bộ UI Kit toàn diện cho nền tảng web khách sạn, đảm bảo tính mở rộng cho các tính năng trong tương lai."
+    },
+    "techmind": {
+      "title": "TechMind",
+      "category": "HỆ THỐNG QUẢN LÝ",
+      "year": "2025",
+      "description": "Bộ công cụ quản trị toàn diện cho giám sát EdTech và kiểm soát nội dung",
+      "introduction": "Mục tiêu là thiết kế dashboard giúp quản trị viên theo dõi hoạt động người dùng, quản lý nội dung và duy trì môi trường học tập an toàn một cách dễ dàng, hiệu quả.",
+      "role": "UI/UX Designer",
+      "roles": [
+        {
+          "title": "Dashboard định hướng dữ liệu",
+          "description": "Sử dụng biểu đồ đường và doughnut để trực quan hóa số liệu tăng trưởng người dùng và tỷ lệ đăng ký. Thiết kế ưu tiên hiển thị KPI ở các vùng dễ quan sát nhất."
+        },
+        {
+          "title": "Quản lý tài nguyên và nội dung",
+          "description": "Tối ưu quy trình đăng tải bài học, quản lý từ vựng và tài nguyên đa phương tiện thông qua giao diện biểu mẫu, giảm đáng kể lỗi nhập liệu."
+        }
+      ],
+      "outcome": "Dự án tạo ra một nền tảng hấp dẫn, dễ sử dụng, góp phần cải thiện rõ rệt mức độ hài lòng và tỷ lệ chuyển đổi của người dùng."
     }
   },
   "contact": {

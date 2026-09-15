@@ -22,7 +22,7 @@ export interface Project {
 
 export const projects: Project[] = [
     {
-    id: 1,
+    id: 2,
     title: "FindBeauty",
     category: "E-CATALOGUE",
     year: "2025",
@@ -54,14 +54,13 @@ export const projects: Project[] = [
     ],
     additionalImages: [
       "/images/project/E-catalouge/HomePage.png",
-      "/images/project/E-catalouge/Overall.png",
       "/images/project/E-catalouge/Frame 1.png",
       "/images/project/E-catalouge/Frame 2.png",
       "/images/project/E-catalouge/Frame 3.png",      
     ],
   },
   {
-    id: 2,
+    id: 1,
     title: "Techdies",
     category: "INTERACTIVE PLATFORM",
     year: "2026",
@@ -88,7 +87,6 @@ export const projects: Project[] = [
       "/images/project/Web/Flow.png",
     ],
     additionalImages: [
-      "/images/project/Web/Overall.png",
       "/images/project/Web/Frame 4.png",
       "/images/project/Web/Frame 3.png",
       "/images/project/Web/Frame 2.png",
@@ -123,7 +121,6 @@ export const projects: Project[] = [
       "/images/project/Hotel Guest/Overall1.png",
     ],
     additionalImages: [
-      "/images/project/Hotel Guest/Overall.png",
       "/images/project/Hotel Guest/Frame 1.png",
       "/images/project/Hotel Guest/Frame 2.png",
       "/images/project/Hotel Guest/Frame 3.png",
@@ -156,7 +153,6 @@ export const projects: Project[] = [
       "/images/project/Manage User/Userflow.png",
     ],
     additionalImages: [
-      "/images/project/Manage User/Overall.png",
       "/images/project/Manage User/Frame 4.png",
       "/images/project/Manage User/Frame 2.png",
       "/images/project/Manage User/Frame 1.png",

@@ -61,68 +61,85 @@
   "projects": {
     "title": "My Projects",
     "viewProject": "View Project",
-    "neo_monolith": {
-      "title": "NEO-MONOLITH",
-      "category": "ARCHITECTURE",
-      "year": "2023",
-      "description": "A brutalist architectural masterpiece showcasing the raw beauty of concrete and geometric precision. This project explores the intersection of modern minimalism and timeless structural design.",
-      "introduction": "This project was commissioned to create a visual identity for a modern architectural firm. The goal was to capture the essence of brutalist design while maintaining a sense of warmth and approachability.",
+    "findbeauty": {
+      "title": "FindBeauty",
+      "category": "E-CATALOGUE",
+      "year": "2025",
+      "description": "UX-Focused Cosmetics Discovery Platform",
+      "introduction": "Users frequently experience 'choice overload' when navigating thousands of cosmetic options. My objective was finding the right product in the shortest time possible.",
+      "role": "Lead UX Designer of Team 3",
       "roles": [
         {
-          "title": "UX Competitive Analysis",
-          "description": "Auditing and benchmarking industry giants to identify architectural design pain points and opportunities."
+          "title": "Segmented User Flows",
+          "description": "Designed two distinct pathways: 'Experienced' (filters and comparisons) and 'Novice' (AI-driven skin analysis quiz)."
         },
         {
-          "title": "UI Design",
-          "description": "Crafting a high-fidelity interface for the brand ecosystem, ensuring a seamless and functional user journey."
+          "title": "Comparison System",
+          "description": "Developed an intuitive, side-by-side comparison interface to reduce cognitive load by eliminating the need for tab-switching."
         },
         {
-          "title": "Visual Assets & Iconography",
-          "description": "Designing a custom icon set and promotional materials to maintain brand consistency throughout the application."
+          "title": "Advanced Filtering",
+          "description": "Engineered a multi-criteria filtering system with rigorous logic to ensure the highest result accuracy."
         }
-      ]
+      ],
+      "outcome": "Achieved >85% positive feedback from teacher and students in usability testing due to the refined, personalized interface."
     },
-    "silk_steel": {
-      "title": "SILK & STEEL",
-      "category": "EDITORIAL",
-      "year": "2024",
-      "description": "An editorial fashion series that juxtaposes delicate fabrics against industrial backdrops, creating a compelling visual narrative of strength and elegance.",
-      "introduction": "A high-fashion editorial shoot exploring the contrast between softness and strength. The series was featured in multiple fashion publications and received critical acclaim for its bold visual approach.",
+    "techdies": {
+      "title": "Techdies",
+      "category": "INTERACTIVE PLATFORM",
+      "year": "2026",
+      "description": "AI-Powered Gamified English Learning",
+      "introduction": "My objective was to transform English learning from a repetitive task into an immersive \"Space Exploration\" adventure in order to maintain a child's focus during language acquisition",
+      "role": "BA, UI/UX Designer & FE Developer",
       "roles": [
         {
-          "title": "Art Direction",
-          "description": "Leading the creative vision and visual storytelling for the entire editorial series."
+          "title": "Gamified UX Architecture",
+          "description": "Integrated diverse game mechanics, including Leaderboards, Flashcards, and interactive 'Missions' to sustain long-term motivation."
         },
         {
-          "title": "Styling Consultation",
-          "description": "Collaborating with stylists to achieve the perfect balance between delicate fabrics and industrial aesthetics."
-        },
-        {
-          "title": "Photo Editing",
-          "description": "Post-production work including color grading, retouching, and final composition adjustments."
+          "title": "Mascot & Branding",
+          "description": "Utilized Adobe Illustrator and Figma to build 'Techdies' mascot and background elements which are suitable for the brand's playful and educational identity."
         }
-      ]
+      ],
+      "outcome": "Sustained high user retention with >70% positive rating from teachers and parents. Successfully authored the GELW_SRS document, ensuring total alignment between business analysis and technical implementation."
     },
-    "digital_dreams": {
-      "title": "DIGITAL DREAMS",
-      "category": "WEB DESIGN",
-      "year": "2024",
-      "description": "An immersive web experience that pushes the boundaries of digital interaction, featuring 3D elements and fluid animations.",
-      "introduction": "This project reimagines the digital experience through innovative UI/UX design. The website features cutting-edge animations and interactive elements that engage users on a deeper level.",
+    "serinity_hotel": {
+      "title": "SERINITY HOTEL",
+      "category": "HOTEL BOOKING PLATFORM",
+      "year": "2025",
+      "description": "A Seamless Booking Hospitality Experience",
+      "introduction": "Complex booking processes are often the primary driver of user drop-offs. My objective was to design a platform that embodies 'Serenity' by enabling users to search, compare, and book in just a few minimalist steps",
+      "role": "UI/UX Designer & Frontend Developer",
       "roles": [
         {
-          "title": "UI/UX Design",
-          "description": "Creating intuitive user interfaces with cutting-edge animations and interactive elements."
+          "title": "Hero-Centric Booking Engine",
+          "description": "Placed core booking tools at the heart of the Home page to drive immediate user action."
         },
         {
-          "title": "Prototyping",
-          "description": "Building interactive prototypes to test and validate design concepts before development."
-        },
-        {
-          "title": "Front-end Development",
-          "description": "Implementing responsive designs with modern frameworks and animation libraries."
+          "title": "Comprehensive User Dashboard",
+          "description": "Developed 'My Booking' pages for seamless stay management, enhancing personalization and long-term user retention."
         }
-      ]
+      ],
+      "outcome": "Built a comprehensive UI Kit for the hotel web platform, ensuring high scalability for future features."
+    },
+    "techmind": {
+      "title": "TechMind",
+      "category": "MANAGEMENT SYSTEM",
+      "year": "2025",
+      "description": "Comprehensive Admin Suite for EdTech Monitoring & Content Control",
+      "introduction": "The goal was to design a dashboard that empowers administrators to oversee user activity, manage content, and ensure a safe learning environment with ease and efficiency.",
+      "role": "UI/UX Designer",
+      "roles": [
+        {
+          "title": "Data-Driven Dashboard",
+          "description": "Utilized line and doughnut charts to visualize user growth and subscription rates. The design prioritizes Key Performance Indicators (KPIs) in high-visibility zones."
+        },
+        {
+          "title": "Resource & Content Management",
+          "description": "Optimized the workflow for uploading lessons and managing vocabulary/multimedia resources through a form interface, significantly reducing data entry errors."
+        }
+      ],
+      "outcome": "The project resulted in a highly engaging and user-friendly platform that significantly improved user satisfaction and conversion rates."
     }
   },
   "contact": {

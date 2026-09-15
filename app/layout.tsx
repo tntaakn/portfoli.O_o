@@ -13,14 +13,17 @@ const inter = Inter({
   variable: '--font-inter'
 });
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+const isVercelProduction = process.env.NODE_ENV === 'production' && process.env.VERCEL === '1';
+
 export const metadata: Metadata = {
   title: 'Portfolio | Akina',
   description: 'Portfolio - UX/UI Designer',
   icons: {
     icon: [
       {
-        url: '/icon.png',
-        type: 'image/png+xml',
+        url: `${basePath}/icon.png`,
+        type: 'image/png',
       },
     ],
   },
@@ -37,7 +40,7 @@ export default function RootLayout({
         <I18nProvider>
           {children}
         </I18nProvider>
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        {isVercelProduction && <Analytics />}
       </body>
     </html>
   )

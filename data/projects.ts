@@ -26,8 +26,8 @@ export const projects: Project[] = [
     title: "FindBeauty",
     category: "E-CATALOGUE",
     year: "2025",
-    image: "/images/project/E-catalouge/HomePage1.png",
-    video: "/images/project/E-catalouge/Screen Recording 2026-05-09 191748.mp4",
+    image: "/images/project/E-catalouge/mockup.png",
+    video: "/images/project/E-catalouge/Screen Recording 2026-11-08 175649.mp4",
     color: "#e49841",
     description: "UX-Focused Cosmetics Discovery Platform",
     introduction: "Users frequently experience 'choice overload' when navigating thousands of cosmetic options. My objective was finding the right product in the shortest time possible.",
@@ -48,8 +48,8 @@ export const projects: Project[] = [
     ],
     outcome: "Achieved >85% positive feedback from teacher and students in usability testing due to the refined, personalized interface.",
     galleryImages: [
-      "/images/project/E-catalouge/View1.png",
-      "/images/project/E-catalouge/View2.png",
+      "/images/project/E-catalouge/mockup.png",
+      "/images/project/E-catalouge/View.png",
       "/images/project/E-catalouge/Overall1.png",
     ],
     additionalImages: [
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     title: "Techdies",
     category: "INTERACTIVE PLATFORM",
     year: "2026",
-    image: "/images/project/Web/View1.png",
+    image: "/images/project/Web/mockup.png",
     video: "/images/project/Web/Screen Recording 2026-05-09 192612.mp4",
     color: "#6366F1",
     description: "AI-Powered Gamified English Learning",
@@ -82,8 +82,8 @@ export const projects: Project[] = [
     ],
     outcome: "Sustained high user retention with >70% positive rating from teachers and parents. Successfully authored the GELW_SRS document, ensuring total alignment between business analysis and technical implementation.",
     galleryImages: [
-      "/images/project/Web/View 1.png",
-      "/images/project/Web/Overall1.png",
+      "/images/project/Web/mockup.png",
+      "/images/project/Web/View.png",
       "/images/project/Web/Flow.png",
     ],
     additionalImages: [
@@ -95,11 +95,11 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: "SERINITY HOTEL",
+    title: "SERENITY HOTEL",
     category: "HOTEL BOOKING PLATFORM",
     year: "2025",
-    image: "/images/project/Hotel Guest/View2.png",
-    video: "/images/project/Hotel Guest/Screen Recording 2026-05-15 045641.mp4",
+    image: "/images/project/Hotel Guest/mockup.png",
+    video: "/images/project/Hotel Guest/Recording 2026-11-08 175213.mp4",
     color: "#3898e7",
     description: "A Seamless Booking Hospitality Experience",
     introduction: "Complex booking processes are often the primary driver of user drop-offs. My objective was to design a platform that embodies 'Serenity' by enabling users to search, compare, and book in just a few minimalist steps",
@@ -116,8 +116,8 @@ export const projects: Project[] = [
     ],
     outcome: "Built a comprehensive UI Kit for the hotel web platform, ensuring high scalability for future features.",
     galleryImages: [
-      "/images/project/Hotel Guest/View2.png",
-      "/images/project/Hotel Guest/View1.png",
+      "/images/project/Hotel Guest/mockup.png",
+      "/images/project/Hotel Guest/View.png",
       "/images/project/Hotel Guest/Overall1.png",
     ],
     additionalImages: [
@@ -131,8 +131,8 @@ export const projects: Project[] = [
     title: "TechMind",
     category: "MANAGEMENT SYSTEM",
     year: "2025",
-    image: "/images/project/Manage User/View1.png",
-    video: "/images/project/Manage User/View1.png",
+    image: "/images/project/Manage User/mockup.png",
+    video: "/images/project/Manage User/Screen Recording 2026-11-08 174507.mp4",
     color: "#6366F1",
     description: "Comprehensive Admin Suite for EdTech Monitoring & Content Control",
     introduction: "The goal was to design a dashboard that empowers administrators to oversee user activity, manage content, and ensure a safe learning environment with ease and efficiency.",
@@ -148,9 +148,9 @@ export const projects: Project[] = [
       }
     ],
     galleryImages: [
+      "/images/project/Manage User/mockup.png",
+      "/images/project/Manage User/View.png",      
       "/images/project/Manage User/Overall1.png",
-      "/images/project/Manage User/View2.png",      
-      "/images/project/Manage User/Userflow.png",
     ],
     additionalImages: [
       "/images/project/Manage User/Frame 4.png",

@@ -11,28 +11,30 @@
     "explore": "Khám phá"
   },
   "about": {
-    "title": "Về tôi",
-    "quote": "Thiết kế tốt bắt đầu từ việc hiểu biết về tâm lý học và công nghệ.",
+    "title": "About Me",
+    "quote": "Good design starts with an understanding of psychology and technology.",
     "quoteAuthor": "- Don Norman",
     "greeting": "Xin chào, tôi là Akina",
     "description": "Cách tiếp cận UI/UX của tôi bắt nguồn từ nền tảng IT. Tôi đam mê hoàn thiện trải nghiệm người dùng. Với nền tảng về kỹ thuật phần mềm, tôi kết hợp chuyên môn của mình với tầm nhìn sáng tạo để xây dựng những sản phẩm vừa có tính thẩm mỹ vừa dễ sử dụng các chức năng.",
     "skillsTitle": "Kỹ năng",
     "skills": [
-      "Nghiên cứu UX",
-      "Thiết kế hiệu ứng chuyển động",
-      "Figma",
-      "Adobe Illustrator",
-      "Git / GitHub",
-      "React & Next.js",
-      "TypeScript",
-      "Tailwind CSS"
+      "UX Research",
+      "Design Systems",
+      "Interaction Design",
+      "User-Centered Design",
+      "User Journey Mapping",
+      "Usability Testing",
+      "Responsive Web Design",
+      "SEO Web Design",
+      "Wireframing & Prototyping",
+      "Agile/Scrum"
     ],
-    "experienceTitle": "Giáo dục & Kinh nghiệm",
+    "experienceTitle": "Giáo dục & Chứng chỉ",
     "experiences": [
-      "GPA: 8.12 - Chuyên ngành Kỹ thuật Phần mềm",
-      "Kỹ thuật phân tích yêu cầu (Điểm: A)",
-      "Giao tiếp Người - Máy (Điểm: A)",
-      "Phát triển Ứng dụng Web (Điểm: A)"
+      "GPA: 8.12 - Chuyên ngành Kỹ thuật Phần mềm - Đại học Công nghệ Thông tin, ĐHQG-HCM",
+      "Chứng chỉ Thiết kế UX của Google",
+      "Chứng chỉ Chuyên ngành AI Essentials của Google",
+      "Chứng chỉ VSTEP Cấp độ 4"
     ],
     "processTitle": "Quy trình làm việc",
     "process": [

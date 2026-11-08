@@ -19,20 +19,22 @@
     "skillsTitle": "Skills",
     "skills": [
       "UX Research",
-      "Motion Design",
-      "Figma",
-      "Adobe Illustrator",
-      "Git / GitHub",
-      "React & Next.js",
-      "TypeScript",
-      "Tailwind CSS"
+      "Design Systems",
+      "Interaction Design",
+      "User-Centered Design",
+      "User Journey Mapping",
+      "Usability Testing",
+      "Responsive Web Design",
+      "SEO Web Design",
+      "Wireframing & Prototyping",
+      "Agile/Scrum"
     ],
-    "experienceTitle": "Education & Experience",
+    "experienceTitle": "Education & Certifications",
     "experiences": [
-      "GPA: 8.12 - Major of Software Engineering",
-      "Requirement Engineering (Grade: A)",
-      "Human-Computer Interaction (Grade: A)",
-      "Web Application Development (Grade: A)"
+      "GPA: 8.12 - Major of Software Engineering - University of Infomation and Technology, VNU-HCM",
+      "Google UX Design Professional Certificate",
+      "Google AI Essentials Specialization Certificate",
+      "VSTEP Level 4 Certificate"
     ],
     "processTitle": "Work Process",
     "process": [

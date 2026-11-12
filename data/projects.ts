@@ -22,7 +22,7 @@ export interface Project {
 
 export const projects: Project[] = [
     {
-    id: 2,
+    id: 1,
     title: "FindBeauty",
     category: "E-CATALOGUE",
     year: "2025",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     title: "Techdies",
     category: "INTERACTIVE PLATFORM",
     year: "2026",

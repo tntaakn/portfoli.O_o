@@ -2,22 +2,20 @@
 
 import { motion } from "framer-motion";
 import { GlassCard } from "./glass-card";
-import { Lightbulb, Palette, Code, CheckCircle } from "lucide-react";
+import { Lightbulb, Palette, Code, CheckCircle, BriefcaseBusiness, GraduationCap } from "lucide-react";
 import { useI18n } from "@/context/i18n";
-
-const iconMap = {
-  Lightbulb,
-  Palette,
-  Code,
-  CheckCircle,
-};
 
 export function AboutSection() {
   const { t } = useI18n();
 
-  const skills = t("about.skills") as string[];
-  const experiences = t("about.experiences") as string[];
-  const processItems = t("about.process") as Array<{ step: string; title: string; description: string }>;
+  const skills = t("about.skills") as unknown as string[];
+  const education = t("about.education") as unknown as string[];
+  const workExperiences = t("about.workExperiences") as unknown as Array<{
+    company: string;
+    role: string;
+    year: string;
+  }>;
+  const processItems = t("about.process") as unknown as Array<{ step: string; title: string; description: string }>;
 
   const workProcess = [
     {
@@ -86,7 +84,7 @@ export function AboutSection() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 1.2, delay: 0.4 }}
           >
             <h2 className="text-3xl md:text-4xl font-serif text-[#CFE7F3] mb-6" style={{ fontFamily: "var(--font-playfair), serif", fontWeight: 600, fontSize: "24px" }}>
               {t("about.greeting")}
@@ -97,45 +95,61 @@ export function AboutSection() {
           </motion.div>
         </GlassCard>
 
-        {/* What I Have - Skills & Experience */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <GlassCard className="p-8" delay={0.2}>
-            <h3 className="text-2xl font-serif text-[#CFE7F3] mb-6" style={{ fontFamily: "var(--font-playfair), serif", fontWeight: 600 }}>
-              {t("about.skillsTitle")}
-            </h3>
-            <div className="flex flex-wrap gap-3">
-              {skills.map((skill, index) => (
-                <motion.span
-                  key={skill}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: 0.1 * index }}
-                  className="px-4 py-2 rounded-full bg-[var(--forest-secondary)]/30 text-[#E6F5FB] text-sm border border-[var(--forest-accent)]/30"
-                >
-                  {skill}
-                </motion.span>
-              ))}
-            </div>
-          </GlassCard>
+        {/* A standalone, seamless row above education and experience. */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className="skills-marquee mb-10 py-2"
+          role="region"
+          aria-label={t("about.skillsTitle")}
+        >
+          <div className="skills-marquee-track">
+            {[0, 1].map((copy) => (
+              <ul key={copy} aria-hidden={copy > 0 ? true : undefined} className="skills-marquee-group">
+                {skills.map((skill) => (
+                  <li key={skill} className="whitespace-nowrap px-5 py-3 rounded-full bg-[var(--forest-secondary)]/20 text-[#E6F5FB] text-sm border border-[var(--forest-accent)]/25">
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
+        </motion.div>
 
-          <GlassCard className="p-8" delay={0.3}>
-            <h3 className="text-2xl font-serif text-[#CFE7F3] mb-6" style={{ fontFamily: "var(--font-playfair), serif", fontWeight: 600 }}>
-              {t("about.experienceTitle")}
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 mb-12">
+          <GlassCard className="p-6 md:p-8" delay={0.2}>
+            <h3 className="flex items-center gap-3 text-2xl font-serif font-semibold text-[#CFE7F3] mb-6">
+              <GraduationCap className="w-6 h-6 shrink-0" aria-hidden="true" />
+              {t("about.educationTitle")}
             </h3>
             <ul className="space-y-4">
-              {experiences.map((exp, index) => (
-                <motion.li
-                  key={exp}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: 0.1 * index }}
-                  className="flex items-center gap-3 text-[#A9C9E2]"
-                >
-                  <span className="w-2 h-2 rounded-full bg-[#A9C9E2]" />
-                  {exp}
-                </motion.li>
+              {education.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-[#A9C9E2] leading-relaxed">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-[#A9C9E2] shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </GlassCard>
+
+          <GlassCard className="p-6 md:p-8" delay={0.3}>
+            <h3 className="flex items-center gap-3 text-2xl font-serif font-semibold text-[#CFE7F3] mb-6">
+              <BriefcaseBusiness className="w-6 h-6 shrink-0" aria-hidden="true" />
+              {t("about.workExperienceTitle")}
+            </h3>
+            <ul className="relative ml-1 before:absolute before:left-0 before:top-3 before:bottom-9 before:w-px before:bg-[var(--forest-accent)]/30">
+              {workExperiences.map((experience) => (
+                <li key={experience.company} className="relative pl-6 pb-7 last:pb-0">
+                  <span aria-hidden="true" className="absolute -left-1 top-2 h-2 w-2 rounded-full bg-[#A9C9E2] ring-4 ring-[var(--forest-primary)]" />
+                  <div className="min-w-0">
+                    <h4 className="text-sm sm:text-base font-semibold leading-6 text-[#E6F5FB]">
+                      {experience.company} <span className="text-base font-normal leading-relaxed text-[#A9C9E2]">– {experience.role}</span>
+                    </h4>
+                    <p className="mt-1.5 text-sm leading-5 font-medium tabular-nums text-[#A9C9E2]/70">{experience.year}</p>
+                  </div>
+                </li>
               ))}
             </ul>
           </GlassCard>
@@ -157,25 +171,21 @@ export function AboutSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {workProcess.map((step, index) => (
             <GlassCard key={step.title} className="p-6 relative overflow-hidden" delay={0.1 * index}>
-              <div className="flex items-center gap-4 mb-4">
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${step.color} flex items-center justify-center flex-shrink-0`}>
-                  <step.icon className="w-6 h-6 text-white" />
+                <div className="flex items-center gap-4 mb-4">
+                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${step.color} flex items-center justify-center flex-shrink-0`}>
+                    <step.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <span className={`text-sm font-bold bg-gradient-to-r ${step.color} bg-clip-text text-transparent`}>
+                    {step.step}
+                  </span>
                 </div>
-                <span className={`text-sm font-bold bg-gradient-to-r ${step.color} bg-clip-text text-transparent`}>
-                  {step.step}
-                </span>
-              </div>
-              <h4 className="text-lg font-semibold text-[#E6F5FB] mb-3">
-                {step.title}
-              </h4>
-              <p className="text-[#A9C9E2]/80 text-sm leading-relaxed mb-4">
-                {step.description}
-              </p>
+                <h4 className="text-lg font-semibold text-[#E6F5FB] mb-3">
+                  {step.title}
+                </h4>
+                <p className="text-[#A9C9E2]/80 text-sm leading-relaxed mb-4">
+                  {step.description}
+                </p>
 
-              {/* Connector line */}
-              {index < workProcess.length - 1 && (
-                <div className="hidden lg:block absolute right-0 top-1/2 w-6 h-0.5 bg-gradient-to-r from-[var(--forest-accent)]/50 to-transparent translate-x-full" />
-              )}
             </GlassCard>
           ))}
         </div>

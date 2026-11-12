@@ -29,11 +29,23 @@
       "Wireframing & Prototyping",
       "Agile/Scrum"
     ],
-    "experienceTitle": "Education & Certifications",
-    "experiences": [
-      "GPA: 8.12 - Major of Software Engineering - University of Infomation and Technology, VNU-HCM",
+    "workExperienceTitle": "Experiences",
+    "workExperiences": [
+      {
+        "company": "TMA Solutions",
+        "role": "UI/UX Designer Intern",
+        "year": "07/2026 - 10/2026"
+      },
+      {
+        "company": "SEO Navigator",
+        "role": "Web Designer",
+        "year": "05/2026 - 11/2026"
+      }
+    ],
+    "educationTitle": "Education & Certifications",
+    "education": [
+      "GPA: 8.28 - Major of Software Engineering - University of Infomation and Technology, VNU-HCM",
       "Google UX Design Professional Certificate",
-      "Google AI Essentials Specialization Certificate",
       "VSTEP Level 4 Certificate"
     ],
     "processTitle": "Work Process",

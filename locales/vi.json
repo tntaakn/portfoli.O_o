@@ -29,11 +29,23 @@
       "Wireframing & Prototyping",
       "Agile/Scrum"
     ],
-    "experienceTitle": "Giáo dục & Chứng chỉ",
-    "experiences": [
-      "GPA: 8.12 - Chuyên ngành Kỹ thuật Phần mềm - Đại học Công nghệ Thông tin, ĐHQG-HCM",
+    "workExperienceTitle": "Kinh nghiệm",
+    "workExperiences": [
+      {
+        "company": "TMA Solutions",
+        "role": "Thực tập sinh Thiết kế UI/UX",
+        "year": "07/2026 - 10/2026"
+      },
+      {
+        "company": "SEO Navigator",
+        "role": "Thiết kế website",
+        "year": "05/2026 - 11/2026"
+      }
+    ],
+    "educationTitle": "Giáo dục & Chứng chỉ",
+    "education": [
+      "GPA: 8.28 - Chuyên ngành Kỹ thuật Phần mềm - Đại học Công nghệ Thông tin, ĐHQG-HCM",
       "Chứng chỉ Thiết kế UX của Google",
-      "Chứng chỉ Chuyên ngành AI Essentials của Google",
       "Chứng chỉ VSTEP Cấp độ 4"
     ],
     "processTitle": "Quy trình làm việc",
